@@ -1,0 +1,16 @@
+server:
+  port: 8080 
+  context: 
+    path: /api/v1/user-service
+
+#Custom context path for Netty server (Non Blocking)
+spring.cloud.circuitbreaker.resilience4j.enabled: true
+
+sample:
+  api:  
+    url: https://reqres.in/api/users/
+
+management:
+  health:
+    circuitbreakers: 
+      enabled: true
